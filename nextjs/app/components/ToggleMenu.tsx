@@ -1,5 +1,3 @@
-"use client";
-import { PlaceHolder } from "./PlaceHolder";
 import styles from "./ToggleMenu.module.css";
 
 type Props = {
@@ -8,13 +6,12 @@ type Props = {
 
 export function ToggleMenu(props: Props) {
   return (
-    <div
-      id={props.targetId}
-      className={styles.component}
-      popover="auto"
-      onBeforeToggle={(e) => console.log("toggle", e)}
-    >
-      <PlaceHolder width={200} height={300} />
+    <div id={props.targetId} className={styles.component} popover="auto">
+      <div>a</div>
+      <div>b</div>
+      <div>d</div>
+      <div>d</div>
+      <div>d</div>
     </div>
   );
 }

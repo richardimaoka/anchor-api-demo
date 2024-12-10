@@ -10,33 +10,34 @@
   margin: 0;
 
   background-color: antiquewhite;
-  transition: display 0.5s allow-discrete;
+  transition: display 0.3s allow-discrete;
+  overflow-y: hidden;
 }
 
 .component {
-  animation: 0.5s forwards shrink;
+  animation: 0.3s forwards shrink;
 }
 
 .component:popover-open {
-  animation: 0.5s forwards expand;
+  animation: 0.3s forwards expand;
 }
 
 @keyframes expand {
   from {
-    transform: scaleY(0%);
+    height: 0;
   }
 
   to {
-    transform: scaleY(100%);
+    height: calc-size(max-content, size);
   }
 }
 
 @keyframes shrink {
   from {
-    transform: scaleY(100%);
+    height: calc-size(max-content, size);
   }
 
   to {
-    transform: scaleY(0%);
+    height: 0;
   }
 }
