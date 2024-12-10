@@ -1,10 +1,10 @@
 import styles from "./page.module.css";
-import { ToggleMenu } from "./ToggleMenu";
+import { ToggleContainer } from "./components/ToggleContainer";
 
 export default function Page() {
   return (
     <div className={styles.page}>
-      <ToggleMenu />
+      <ToggleContainer />
     </div>
   );
 }
