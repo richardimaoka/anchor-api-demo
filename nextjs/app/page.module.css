@@ -6,25 +6,3 @@
   height: 100svh;
   width: 100svw;
 }
-
-.button {
-  anchor-name: --anchor-el;
-  width: 200px;
-  height: 50px;
-
-  background-color: salmon;
-  color: white;
-  font-size: 1.5rem;
-
-  border: none;
-}
-
-.positioned {
-  position: absolute;
-  position-anchor: --anchor-el;
-  top: anchor(bottom);
-  right: anchor(left);
-
-  width: 500px;
-  background-color: antiquewhite;
-}

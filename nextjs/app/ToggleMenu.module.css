@@ -1,0 +1,13 @@
+.componnent > *:nth-child(1) {
+  anchor-name: --anchor-el;
+}
+
+.positioned {
+  position: absolute;
+  position-anchor: --anchor-el;
+  position-area: bottom span-right;
+
+  width: 150px;
+  height: 200px;
+  background-color: antiquewhite;
+}
