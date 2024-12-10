@@ -1,12 +1,13 @@
 import { ToggleButton } from "./ToggleButton";
 import styles from "./ToggleContainer.module.css";
+import { ToggleMenu } from "./ToggleMenu";
 
 export function ToggleContainer() {
   const target = "toggle-menu";
   return (
-    <div className={styles.comonent} popover="auto">
+    <div className={styles.component}>
       <ToggleButton target={target} />
-      <div className={styles.positioned}>hello world</div>
+      <ToggleMenu targetId={target} />
     </div>
   );
 }
