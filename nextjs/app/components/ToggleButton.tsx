@@ -7,7 +7,7 @@ type Props = {
 export function ToggleButton(props: Props) {
   return (
     <button className={styles.component} popoverTarget={props.target}>
-      <span className={styles.left}>toggle</span>
+      <span className={styles.left}>menu</span>
       <span className={styles.right}>v</span>
     </button>
   );
