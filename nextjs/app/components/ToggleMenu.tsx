@@ -1,14 +1,24 @@
-import { PlaceHolder } from "./PlaceHolder";
+import { ReactNode } from "react";
 import styles from "./ToggleMenu.module.css";
 
 type Props = {
-  targetId: string;
+  target: string;
+  anchorName: string;
+  children: ReactNode;
 };
 
 export function ToggleMenu(props: Props) {
   return (
-    <div id={props.targetId} className={styles.component} popover="auto">
-      <PlaceHolder width={200} height={300} />
+    <div
+      id={props.target}
+      style={{
+        //@ts-expect-error anchor-name is not in React's type definition for style
+        "position-anchor": "--anchor-" + props.target,
+      }}
+      className={styles.component}
+      popover="auto"
+    >
+      {props.children}
     </div>
   );
 }

@@ -5,8 +5,8 @@
   margin: 0;
 
   /* anchor position settings */
-  position: absolute; /* this is not necessary if you use popover in combo with anchor */
-  position-anchor: --anchor-el;
+  /* position: absolute; /* this is not necessary if you use popover in combo with anchor */
+  /* position-anchor: --anchor-*********; /* this should be supplied by the style attribute instead */
   position-area: bottom span-right;
 
   background-color: antiquewhite;
