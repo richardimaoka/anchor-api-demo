@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./ToggleButton.module.css";
-import localFile from "./icons/arrow_drop_down.svg";
+import localFile from "./arrow_drop_down.svg";
 
 type Props = {
   target: string; //must be a globally unique name
