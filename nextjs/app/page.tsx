@@ -1,5 +1,5 @@
 import styles from "./page.module.css";
-import { ToggleContainer } from "./components/ToggleContainer";
+import { ToggleContainer } from "./components/toggle/ToggleContainer";
 import { PlaceHolder } from "./components/PlaceHolder";
 
 export default function Page() {
